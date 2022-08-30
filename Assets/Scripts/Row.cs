@@ -75,7 +75,7 @@ namespace slot
 
         private void OnDestroy()
         {
-            GameObject.HandlePulled -= startRotating;
+            //GameObject.HandlePulled -= startRotating;
         }
 
     }

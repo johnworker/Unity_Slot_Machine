@@ -57,6 +57,9 @@ namespace slot {
         private void CheckResults()
         {
             if(rows[0].stoppedSlot == "Diamond" && rows[1].stoppedSlot == "Diamond" && rows[2].stoppedSlot == "Diamond")
+            {
+
+            }
 
             else if (rows[0].stoppedSlot == "Crown" && rows[1].stoppedSlot == "Crown" && rows[2].stoppedSlot == "Crown")
 
