@@ -69,7 +69,15 @@ namespace slot
 
             if (transform.position.y == -3.5f)
                 stoppedSlot = "Diamond";
+
+            rowStopped = true;
         }
+
+        private void OnDestroy()
+        {
+            GameObject.HandlePulled -= startRotating;
+        }
+
     }
 
 }

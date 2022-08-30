@@ -62,6 +62,7 @@ namespace slot {
 
             resultsChecked = true;
         }
+
     }
 
 }
