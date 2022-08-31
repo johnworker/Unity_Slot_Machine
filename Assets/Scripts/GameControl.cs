@@ -94,11 +94,6 @@ namespace slot {
             resultsChecked = true;
         }
 
-
-        public void OnEnable()
-        {
-            enabled = true;
-        }
     }
 
 }

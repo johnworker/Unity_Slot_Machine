@@ -27,18 +27,18 @@ namespace slot
         private IEnumerator Rotate()
         {
             rowStopped = false;
-            timeInterval = 0.025f;
+            timeInterval = 0.05f;
 
             for (int i = 0; i < 30; i++)
             {
                 if (transform.position.y <= -3.5f)
-                    transform.position = new Vector2(transform.position.x, 1.75f);
+                    transform.position = new Vector2(transform.position.x, 1.425f);
 
-                transform.position = new Vector2(transform.position.x, transform.position.y + 2.84f);
+                transform.position = new Vector2(transform.position.x, transform.position.y + 2.85f);
                 yield return new WaitForSeconds(timeInterval);
             }
 
-            randomValue = Random.Range(60, 100);
+            randomValue = Random.Range(0, 100);
             switch (randomValue % 3)
             {
                 case 1:
@@ -51,8 +51,8 @@ namespace slot
 
             for (int i = 0; i < randomValue; i++)
             {
-                if (transform.position.y <= -3.5f)
-                    transform.position = new Vector2(transform.position.x, 1.425f);
+                if (transform.position.y <= 5.55f)
+                    transform.position = new Vector2(transform.position.x, 2.15f);
                 transform.position = new Vector2(transform.position.x, transform.position.y + 2.85f);
 
                 if (i > Mathf.RoundToInt(randomValue * 0.25f))
